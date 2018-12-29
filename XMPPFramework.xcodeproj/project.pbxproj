@@ -65,6 +65,7 @@
 		0D44BB721E537110000930E0 /* XMPPStringPrep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB641E537110000930E0 /* XMPPStringPrep.m */; };
 		0D44BB731E537110000930E0 /* XMPPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB651E537110000930E0 /* XMPPTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D44BB741E537110000930E0 /* XMPPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB661E537110000930E0 /* XMPPTimer.m */; };
+		6564C48621D78B0300740B99 /* XMPPExternalAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564C48521D78B0300740B99 /* XMPPExternalAuthentication.m */; };
 		D91D42431FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42441FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42451FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
@@ -1506,6 +1507,8 @@
 		0D44BB641E537110000930E0 /* XMPPStringPrep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPStringPrep.m; sourceTree = "<group>"; };
 		0D44BB651E537110000930E0 /* XMPPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPTimer.h; sourceTree = "<group>"; };
 		0D44BB661E537110000930E0 /* XMPPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPTimer.m; sourceTree = "<group>"; };
+		6564C48421D78AD200740B99 /* XMPPExternalAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMPPExternalAuthentication.h; sourceTree = "<group>"; };
+		6564C48521D78B0300740B99 /* XMPPExternalAuthentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMPPExternalAuthentication.m; sourceTree = "<group>"; };
 		D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMPPPresence+XEP_0319.swift"; sourceTree = "<group>"; };
 		D91D42471FD9DCAA0064FD27 /* Date+XEP_0082.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+XEP_0082.swift"; sourceTree = "<group>"; };
 		D9268BAA1F9EB0BB009A37C7 /* XMPPMessage+XEP_0313.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMPPMessage+XEP_0313.h"; sourceTree = "<group>"; };
@@ -1972,6 +1975,7 @@
 		0D44BB301E537105000930E0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				6564C47721D78AB200740B99 /* External */,
 				0D44BB311E537105000930E0 /* Anonymous */,
 				0D44BB341E537105000930E0 /* Deprecated-Digest */,
 				0D44BB371E537105000930E0 /* Deprecated-Plain */,
@@ -2078,6 +2082,15 @@
 				D9DCD3391E6250C50010D1C7 /* CocoaAsyncSocket.xcodeproj */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		6564C47721D78AB200740B99 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				6564C48421D78AD200740B99 /* XMPPExternalAuthentication.h */,
+				6564C48521D78B0300740B99 /* XMPPExternalAuthentication.m */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 		D91D42351FD9DA9B0064FD27 /* XEP-0319 */ = {
@@ -4084,6 +4097,7 @@
 				D9DCD2FB1E6250930010D1C7 /* XMPPPresence+XEP_0172.m in Sources */,
 				D9DCD32D1E6250930010D1C7 /* XMPPHTTPFileUpload.m in Sources */,
 				D9DCD2EA1E6250930010D1C7 /* XMPPCapabilities.m in Sources */,
+				6564C48621D78B0300740B99 /* XMPPExternalAuthentication.m in Sources */,
 				D9DCD2631E6250930010D1C7 /* OMEMOSignedPreKey.m in Sources */,
 				D9DCD28F1E6250930010D1C7 /* XMPPRoom.xcdatamodeld in Sources */,
 				D9DCD3011E6250930010D1C7 /* XMPPBlocking.m in Sources */,
